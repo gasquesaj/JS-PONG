@@ -69,7 +69,7 @@ function verificaColisaoBorda() {
   if (xBolinha + raio > width || xBolinha - raio < 0) {
     velocidadeXBolinha *= -1;
   }
-  if (yBolinha - raio > height || yBolinha - raio < 0) {
+  if (yBolinha + raio > height || yBolinha - raio < 0) {
     velocidadeYBolinha *= -1;
   }
 }
