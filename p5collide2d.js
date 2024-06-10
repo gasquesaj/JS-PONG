@@ -6,8 +6,6 @@ Version v0.7.3 | June 22, 2020
 CC BY-NC-SA 4.0
 */
 
-console.log("### p5.collide v0.7.3 ###")
-
 p5.prototype._collideDebug = false;
 
 p5.prototype.collideDebug = function(debugMode){
@@ -32,6 +30,7 @@ p5.prototype.collideRectRect = function (x, y, w, h, x2, y2, w2, h2) {
 p5.prototype.collideRectRectVector = function(p1, sz, p2, sz2){
   return p5.prototype.collideRectRect(p1.x, p1.y, sz.x, sz.y, p2.x, p2.y, sz2.x,sz2.y)
 }
+
 
 p5.prototype.collideRectCircle = function (rx, ry, rw, rh, cx, cy, diameter) {
   //2d
@@ -69,10 +68,12 @@ p5.prototype.collideCircleCircle = function (x, y,d, x2, y2, d2) {
   return false;
 };
 
+
 // p5.vector version of collideCircleCircle
 p5.prototype.collideCircleCircleVector = function(p1,d, p2, d2){
   return p5.prototype.collideCircleCircle(p1.x,p1.y,  d, p2.x,p2.y, d2)
 }
+
 
 p5.prototype.collidePointCircle = function (x, y, cx, cy, d) {
 //2d
@@ -229,6 +230,7 @@ p5.prototype.collideLineLine = function(x1, y1, x2, y2, x3, y3, x4, y4,calcInter
   }
   return false;
 }
+
 
 // p5.vector version of collideLineLine
 p5.prototype.collideLineLineVector = function(p1, p2, p3, p4, calcIntersection){
